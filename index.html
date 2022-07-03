@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//vjs.zencdn.net/7.10.2/video-js.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/lib.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>tibi_gp</title>
+</head>
+<body data-barba="wrapper" class="home-page">
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+        <symbol id="logo_svg" viewBox="0 0 198.5 89.4"><title>tibi_gp</title><desc>Navigate to home page</desc>
+            <path class="st0" d="M129.2,65.9c-3.1,0-5.7-1-7.8-3.1c-2.1-2.1-3.1-4.7-3.1-8c0-3.1,1-5.7,3-7.8c2-2.1,4.6-3.1,7.7-3.1
+            s5.7,1.1,7.7,3.1c2,2.1,3,4.7,3,8c0,3.3-1,6-3,8S132.2,66.1,129.2,65.9z"/><path class="st0" d="M171.3,63.7c-2.1-2.1-3.1-4.9-3.1-8.4c0-3.4,1.1-6.2,3.1-8.3c2-2.1,4.6-3.2,7.8-3.3c3,0,5.6,1.1,7.6,3.2
+            c2,2.2,3,4.9,3,8.3c0,3.4-1,6.2-3.1,8.4c-2.1,2.2-4.6,3.3-7.6,3.3C175.9,66.9,173.3,65.8,171.3,63.7z"/><path class="st0" d="M198.5,0.1v48.2c-0.9-2.9-2.4-5.5-4.4-7.7c-3.5-3.9-7.9-5.8-13-5.8c-2.3,0-4.5,0.4-6.6,1.3
+            c-2.1,0.9-4,2.2-5.8,4v-4.3h-9.8v53.4h-22c3.2-1,5.9-2.8,8-5.2c2.7-3.1,4-8,4-14.6V35.8h-9.8v4.3c-2-1.9-4-3.3-6-4.1 c-2-0.8-4.1-1.2-6.4-1.2c-4.9,0-9,1.7-12.5,5.1c-2.2,2.2-3.8,4.9-4.7,8V0.1H198.5z"/><path class="st0" d="M119.1,88.9c0.2,0.1,0.5,0.2,0.9,0.3h-10.5v-8.9c0.8,1.7,1.8,3.1,3,4.4C114.3,86.5,116.5,87.9,119.1,88.9z"/><path class="st0" d="M138.1,76.8c-0.7,1.3-1.8,2.4-3.4,3.2c-1.6,0.8-3.8,1.2-6.4,1.2c-2.1,0-3.9-0.2-5.4-0.8s-2.7-1.4-3.7-2.5h-9.8 V61.6c0.9,2.9,2.4,5.4,4.6,7.6c3.6,3.8,8,5.7,13.3,5.7c2.4,0,4.5-0.3,6.4-1.1c1.9-0.7,3.7-2,5.4-3.7 C139.1,73.3,138.8,75.5,138.1,76.8z"/><path class="st0" d="M193.9,70.1c2.1-2.3,3.6-4.9,4.6-7.8v26.9h-29.8V70.9c1.9,1.8,3.9,3.1,5.8,3.9c1.9,0.8,4,1.2,6.3,1.2 C185.8,76,190.2,74,193.9,70.1z"/><path class="st0" d="M91.9,30.5c-1.3-1.3-1.9-2.8-1.9-4.6c0-1.7,0.6-3.2,1.8-4.4c1.3-1.3,2.8-1.9,4.5-1.9s3.2,0.6,4.4,1.9 c1.2,1.2,1.9,2.8,1.9,4.5c0,1.8-0.6,3.2-1.8,4.5c-1.2,1.2-2.7,1.9-4.4,1.9C94.7,32.4,93.2,31.8,91.9,30.5z"/><rect x="25" y="35.8" class="st0" width="9.8" height="39.2"/><polygon class="st0" points="15,35.7 20.8,35.7 20.8,44.2 15,44.2 15,75 5.1,75 5.1,44.2 0.1,44.2 0.1,35.7 5.1,35.7 5.1,21.3 15,21.3 "/><path class="st0" d="M78.9,40.6c-3.5-3.9-7.9-5.8-13-5.8c-2.3,0-4.5,0.4-6.6,1.3c-2.1,0.9-4,2.2-5.8,4V20.6h-9.8V75h9.8v-4.1 c1.9,1.8,3.9,3.1,5.8,3.9c1.9,0.8,4,1.2,6.3,1.2c5.1,0,9.5-2,13.2-5.9c3.7-3.9,5.5-8.8,5.5-14.6C84.3,49.4,82.5,44.5,78.9,40.6z
+             M71.4,63.6c-2.1,2.2-4.6,3.3-7.6,3.3c-3.1,0-5.7-1.1-7.7-3.2C54,61.6,53,58.8,53,55.3c0-3.4,1.1-6.2,3.1-8.3c2-2.1,4.6-3.2,7.7-3.2 c3.1,0,5.7,0.9,7.7,3.1s3,4.9,3,8.3C74.5,58.6,73.5,61.4,71.4,63.6z"/><rect x="91.4" y="35.8" class="st0" width="9.8" height="39.2"/><path class="st0" d="M34.3,21.5c1.2,1.2,1.9,2.8,1.9,4.5c0,1.8-0.6,3.2-1.8,4.5c-1.2,1.2-2.7,1.9-4.4,1.9s-3.2-0.6-4.5-1.9 c-1.2-1.3-1.8-2.8-1.8-4.6c0-1.7,0.6-3.2,1.8-4.4c1.2-1.3,2.7-1.9,4.4-1.9C31.6,19.6,33.1,20.2,34.3,21.5z"/>
+        </symbol>
+    </svg>
+
+    <div id="transitionPanel" class="ready"></div>
+    <a href="./" class="logo_gp trans" data-target="home">
+        <svg style="fill: #ffffff;"><use xlink:href="#logo_svg"></use></svg>
+    </a>
+
+    <div id="navPanel" class="hover"></div>
+    
+    <div id="navContent">
+        <a href="./" id="logo-nav" class="navChild trans"  data-target="home"><img src="assets/images/logo.svg?v2" alt="tibi_gp"></a>
+
+        <h1 class="navHeading navChild">Showcase <a href="showcase.html" class="navHeading_link trans" data-target="showcase">Browse</a></h1>
+        <hr class="navDivider navChild">
+        <a href="sogerim.html" class="navChild navLink trans" data-target="sogerim">Sogerim<span class="navLink_line"></span></a>
+        <a href="mostwanted.html" class="navChild navLink">MostWanted<span class="navLink_line"></span></a>
+        <a href="goodmorning.html" class="navChild navLink">Goodmorning<span class="navLink_line"></span></a>
+        <a href="sodexo.html" class="navChild navLink">Sodexo<span class="navLink_line"></span></a>
+        <a href="myecocheques.html" class="navChild navLink">Myecocheques<span class="navLink_line"></span></a>
+        <a href="modernrecipes.html" class="navChild navLink">Modernrecipes<span class="navLink_line"></span></a>
+        <a href="sctr.html" class="navChild navLink">SCTR<span class="navLink_line"></span></a>
+        <a href="compactuel.html" class="navChild navLink">Comptacuel<span class="navLink_line"></span></a>
+    
+        <h1 class="navHeading navChild">About</h1>
+        <hr class="navDivider navChild">
+        <a href="https://www.linkedin.com/in/tiberiugrecu" target="_blank" class="navChild navLink">LinkedIn<span class="navLink_line"></span></a>
+        <a href="https://leetcode.com/tibi_g/" target="_blank" class="navChild navLink">LeetCode<span class="navLink_line"></span></a>
+    
+        <h1 class="navHeading navChild">Contact</h1>
+        <hr class="navDivider navChild">
+        <a href="mailto:grecutiberiu@yahoo.com" class="navChild navLink">grecutiberiu@yahoo.com<span class="navLink_line"></span></a>
+    </div>
+    
+    <div id="navToggle">
+        <div id="navIcon" class="default">
+            <span id="navIcon_topBar"></span>
+            <span id="navIcon_bottomBar"></span>
+        </div>
+    </div>
+
+
+    <div data-barba="container" data-barba-namespace="home">
+        <main class="main">
+
+            <div id="home_intro" class="panel" data-color="#fff">
+                <div class="panel_art">
+                    <div class="video-container">
+                        <video data-url="assets/video/vid-hp.mp4" class="video-js vjs-fluid video-loop" playsinline></video>
+                    </div>
+                </div>
+                <div class="panel_copy sticky stuck bottom">
+                    <h1 class="panel_heading animate">Hello, World.</h1>
+                    <p class="panel_description animate">
+                        I'm Tiberiu. A Front End Developer living in Romania. Specialized in HTML5 and WordPress responsive websites, newsletters, banner animations and more.
+                    </p>
+                    <a href="showcase.html" class="btns trans animate" data-target="showcase">Project showcase</a>
+                </div>
+            </div>
+
+            <div id="home_websites" class="panel animate"  data-color="#000">
+                <div class="panel_art in" style="background-image: url(assets/images/showcase/homepage-websites.jpg);background-size:cover;background-position: bottom right;"></div>
+                <div class="panel_copy sticky stuck bottom">
+                    <h1 class="panel_heading">Websites</h1>
+                    <p class="panel_description">
+                        I build responsive websites from scratch that fit perfectly with design.<br>
+                        For content management I use WordPress. I collaborate with backend developers and teams to integrate the design with various CMS systems.
+                    </p>
+                </div>
+            </div>
+
+            <div id="home_banners" class="panel" data-color="#fff">
+                <div class="panel_art in">
+                    <div class="video-container clean">
+                        <video data-url="assets/video/banners-video-homepage.mp4?v4" class="video-js vjs-fluid video-loop" playsinline></video>
+                    </div>
+                </div>
+                <div class="panel_copy sticky stuck bottom">
+                    <h1 class="panel_heading">Banner animations</h1>
+                    <p class="panel_description">
+                        I use Adobe Animate to build HTML5 animated banners. I work with the client's design and storyboard, always putting quality first.
+                    </p>
+                </div>
+            </div>
+
+            <div id="home_newsletters" class="panel" data-color="#000" >
+                <div class="panel_art in" style="background-image: url(assets/images/showcase/homepage-newsletters.jpg?2);background-size:cover;background-position: bottom right;"></div>
+                <div class="panel_copy sticky stuck bottom">
+                    <h1 class="panel_heading">Newsletters</h1>
+                    <p class="panel_description">
+                        I build quality newsletters that work on all major email clients. I provide MailChimp integration if necessary.
+                    </p>
+                </div>
+            </div>
+
+
+            <div id="home_games" class="panel" data-color="#fff">
+                <div class="panel_art in" style="background-image: url(assets/images/showcase/homepage-games.jpg);background-size:cover;background-position: bottom right;"></div>
+                <div class="panel_copy sticky stuck bottom">
+                    <h1 class="panel_heading">Games</h1>
+                    <p class="panel_description">
+                        I had the chance and curiosity to build few games over the years. I started with flash games and I've transitioned to HTML5. Lately I've started playing with Godot, a free and open source game engine that can export the game for multiple platforms. 
+                    </p>
+                    <!-- <a href="showcase.html" id="" class="btns trans">More about games.</a> -->
+                </div>
+            </div>
+
+            <div id="home_mobileapp" class="panel" data-color="#000">
+                <div class="panel_art in" style="background-image: url(assets/images/showcase/homepage-app.jpg);background-size:cover;background-position: bottom right;"></div>
+                <div class="panel_copy sticky stuck bottom">
+                    <h1 class="panel_heading">Mobile app</h1>
+                    <p class="panel_description">
+                        When you use Adobe Animate to build the mobile app and you realize that the overall performance is low, what do you do ?
+                        Build a Hackintosh, install xCode and rebuild the app from scratch in Objective C.
+                    </p>
+                    <!-- <a href="hotel-bloom.html" id="" class="btns btn-black  trans">More about the app</a> -->
+                </div>
+            </div>
+
+
+
+
+        </main>
+
+        <div id="footer">
+            <div id="footer_cta" class="footer_col">
+                <a href="./" id="logo-nav" class="trans" data-target="home"><img src="assets/images/logo.svg" alt="tibi_gp"></a>
+            </div>
+            <div id="footer_quote" class="footer_col">
+                <figure>
+                    <blockquote>Those who cannot remember the past are condemned to repeat it.</blockquote>
+                    <figcaption>
+                        &mdash; Dynamic Programming
+                    </figcaption>
+                </figure>
+            </div>
+            <div id="footer_links" class="footer_col">
+                <a href="mailto:grecutiberiu@yahoo.com" class="footer_link"><span class="ico-email"></span> grecutiberiu@yahoo.com</a>
+                <a href="tel:+040766643113" class="footer_link"><span class="ico-mobile"></span> +040766643113</a>
+                <a href="https://leetcode.com/tibi_g/" class="footer_link" target="_blank"><span class="ico-leetcode"></span> leetcode.com/tibi_g</a>
+            </div>
+            <div id="footer_copyright">
+                <p id="footer_copyright_text"><span class="footer_copyright_symbol">©</span>2022 tibi_gp</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="//vjs.zencdn.net/7.10.2/video.min.js"></script>
+<script src="js/lib.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</html>
