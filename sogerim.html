@@ -63,13 +63,16 @@
     <div data-barba="container" data-barba-namespace="home">
         <main class="main" style="background-color: #1858B9">
 
-            <div id="sogerim_intro" class="panel" style="background-color:#1858B9;">
-                <div class="panel_art fade" style="background: #1858B9; background: linear-gradient(240deg, #1858B9 0%, #110f2a 100%);">
-                    <img src="assets/images/showcase/sogerim/showcase-detail-header-sogerim.png" alt="showcase sogerim">
+            <div id="sogerim_intro" class="panel">
+                <div class="panel_art fade">
+                    <picture>
+                        <source srcset="assets/images/showcase/sogerim/showcase-detail-header-sogerim-m.png" media="(max-width:768px)">
+                        <img src="assets/images/showcase/sogerim/showcase-detail-header-sogerim.png" alt="showcase sogerim">
+                    </picture>
                 </div>
-                <div class="panel_copy sticky stuck bottom">
-                    <h1 class="panel_heading animate">Sogerim</h1>
-                    <p class="panel_description animate">
+                <div class="panel_copy sticky stuck bottom animate">
+                    <h1 class="panel_heading">Sogerim</h1>
+                    <p class="panel_description">
                         The request: to build the frontend based on the design provided by the client and to integrate it with the WordPress CMS. 
                         The "Properties for sale" section of the site will get the data from the client's CRM.
                         For admin, the client wanted to be able to edit the content of the pages and create a list of projects.
@@ -81,11 +84,14 @@
 
             <div id="sogerim_admin" class="panel" data-color="#110F2A">
                 <div class="panel_art animate">
-                    <img src="assets/images/showcase/sogerim/showcase-sogerim-admin.jpg" alt="showcase sogerim admin">
+                    <picture>
+                        <source srcset="assets/images/showcase/sogerim/showcase-sogerim-admin-m.jpg" media="(max-width:768px)">
+                        <img src="assets/images/showcase/sogerim/showcase-sogerim-admin.jpg" alt="showcase sogerim admin">
+                    </picture>
                 </div>
-                <div class="panel_copy sticky stuck bottom">
-                    <h1 class="panel_heading animate">Custom admin area</h1>
-                    <p class="panel_description animate">
+                <div class="panel_copy sticky stuck bottom animate">
+                    <h1 class="panel_heading">Custom admin area</h1>
+                    <p class="panel_description">
                         Everything is custom. Custom login screen. Custom type for the projects list. Custom fields for each block of content.
                     </p>
                 </div>
@@ -95,7 +101,7 @@
                 <div class="panel_art animate">
                     <img src="assets/images/showcase/sogerim/showcase-sogerim-screenshots.jpg" alt="showcase sogerim pages">
                 </div>
-                <div class="panel_copy sticky stuck bottom"></div>
+                <div class="panel_copy sticky stuck bottom hide-xs"></div>
             </div>
 
         </main>
