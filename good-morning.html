@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="//vjs.zencdn.net/7.10.2/video-js.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/lib.min.css">
-    <link rel="stylesheet" href="css/main.min.css?v4">
+    <link rel="stylesheet" href="css/main.min.css">
     <title>tibi|gp|</title>
 </head>
-<body data-barba="wrapper" class="home-page">
+<body data-barba="wrapper" class="goodmorning">
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
         <symbol id="logo_svg" viewBox="0 0 198.5 89.4"><title>tibi_gp</title><desc>Navigate to home page</desc>
@@ -29,7 +29,7 @@
     <div id="navPanel" class="hover"></div>
     
     <div id="navContent">
-        <a href="./" id="logo-nav" class="navChild trans"  data-target="home"><img src="assets/images/logo.svg?v2" alt="tibi_gp"></a>
+        <a href="./" id="logo-nav" class="navChild trans" data-target="home"><img src="assets/images/logo.svg" alt="tibi_gp"></a>
 
         <h1 class="navHeading navChild">Showcase <a href="showcase.html" class="navHeading_link trans" data-target="showcase">Browse</a></h1>
         <hr class="navDivider navChild">
@@ -61,106 +61,56 @@
 
 
     <div data-barba="container" data-barba-namespace="home">
-        <main class="main">
+        <main class="main" style="background-color: #F04E27">
 
-            <div id="home_intro" class="panel" data-color="#fff">
+            <div id="gm_intro" class="panel">
                 <div class="panel_art fade">
-                    <div class="video-container">
-                        <video data-url="assets/video/intro.mp4" class="video-js vjs-fluid video-loop" playsinline></video>
-                    </div>
-                </div>
-                <div class="panel_copy sticky stuck bottom">
-                    <h1 class="panel_heading animate">Hello,</h1>
-                    <p class="panel_description animate">
-                        I'm Tiberiu. A Front End Developer living in Romania. Specialized in HTML5 and WordPress responsive websites, newsletters, banner animations and more.
-                    </p>
-                    <a href="showcase.html" class="btns trans animate" data-target="showcase">Project showcase</a>
-                </div>
-            </div>
-
-            <div id="home_websites" class="panel" data-color="#000">
-                <div class="panel_art animate">
                     <picture>
-                        <source srcset="assets/images/showcase/homepage-websites-m.png" media="(max-width:768px)">
-                        <img src="assets/images/showcase/homepage-websites.jpg" alt="websites">
+                        <source srcset="assets/images/showcase/gm/showcase-detail-header-gm-m.png" media="(max-width:768px)">
+                        <img src="assets/images/showcase/gm/showcase-detail-header-gm.png" alt="showcase good-morning">
                     </picture>
                 </div>
                 <div class="panel_copy sticky stuck bottom animate">
-                    <h1 class="panel_heading">Websites</h1>
+                    <h1 class="panel_heading">GoodMorning</h1>
                     <p class="panel_description">
-                        I build responsive websites from scratch that fit perfectly with design.<br>
-                        For content management I use WordPress. I collaborate with backend developers and teams to integrate the design with various CMS systems.
+                        The request: to build the frontend based on the design provided by the client and to add content animations on page scroll and micro animaitons on mouseover certain key words from the content.
+                        For admin, the client chose WordPress as the CMS and wanted to be able to edit the content of the portfolio pages.
                     </p>
+
+                    <a href="https://www.good-morning.be/" class="btns animate" target="_blank">View website</a>
                 </div>
             </div>
 
-            <div id="home_banners" class="panel" data-color="#fff">
-                <div class="panel_art animate">
-                    <div class="video-container clean">
-                        <video data-url="assets/video/banners.mp4" data-urlm="assets/video/banners-m.mp4?v2" class="video-js vjs-fluid video-loop" playsinline></video>
-                    </div>
-                </div>
-                <div class="panel_copy sticky stuck bottom animate">
-                    <h1 class="panel_heading">Banner animations</h1>
-                    <p class="panel_description">
-                        I use Adobe Animate to build HTML5 animated banners. I work with the client's design and storyboard, always putting quality first.
-                    </p>
-                </div>
-            </div>
-
-            <div id="home_newsletters" class="panel" data-color="#000" >
+            <div id="gm_admin" class="panel" data-color="#110F2A">
                 <div class="panel_art animate">
                     <picture>
-                        <source srcset="assets/images/showcase/homepage-newsletters-m.png" media="(max-width:768px)">
-                        <img src="assets/images/showcase/homepage-newsletters.jpg" alt="newsletters">
+                        <source srcset="assets/images/showcase/gm/showcase-gm-admin-m.jpg" media="(max-width:768px)">
+                        <img src="assets/images/showcase/gm/showcase-gm-admin.jpg" alt="showcase gm admin">
                     </picture>
                 </div>
                 <div class="panel_copy sticky stuck bottom animate">
-                    <h1 class="panel_heading">Newsletters</h1>
+                    <h1 class="panel_heading">Custom WordPress blocks</h1>
                     <p class="panel_description">
-                        I build quality newsletters that work on all major email clients. I provide MailChimp integration if necessary.
+                        For the portfolio pages, I've created in WordPress seven types of blocks that can be added one on top of each other and reordered as needed.
+                        This ensure that each portfolio page will have a unique design. Each block have the option to use a desktop image, a mobile image or a video (local file or youtube).
+                        All portfolio pages are listed in the <a href="https://www.good-morning.be/work/" target="_blank">'work'</a> page.
                     </p>
                 </div>
             </div>
 
-
-            <div id="home_games" class="panel" data-color="#fff">
+            <div id="gm_pages" class="panel" data-color="#fff">
                 <div class="panel_art animate">
-                    <picture>
-                        <source srcset="assets/images/showcase/homepage-games-m.png" media="(max-width:768px)">
-                        <img src="assets/images/showcase/homepage-games.jpg" alt="games">
-                    </picture>
+                    <img src="assets/images/showcase/gm/showcase-gm-screenshots.jpg" alt="showcase gm pages">
                 </div>
-                <div class="panel_copy sticky stuck bottom animate">
-                    <h1 class="panel_heading">Games</h1>
-                    <p class="panel_description">
-                        I had the chance and curiosity to build few games over the years. I started with flash games and I've transitioned to HTML5. Lately I've started playing with Godot, a free and open source game engine that can export the game for multiple platforms. 
-                    </p>
-                    <!-- <a href="showcase.html" id="" class="btns trans">More about games.</a> -->
-                </div>
+                <div class="panel_copy sticky stuck bottom hide-xs"></div>
             </div>
-
-            <div id="home_mobileapp" class="panel" data-color="#000">
-                <div class="panel_art animate">
-                    <picture>
-                        <source srcset="assets/images/showcase/homepage-app-m.png" media="(max-width:768px)">
-                        <img src="assets/images/showcase/homepage-app.jpg" alt="mobile app">
-                    </picture>
-                </div>
-                <div class="panel_copy sticky stuck bottom animate">
-                    <h1 class="panel_heading">Mobile app</h1>
-                    <p class="panel_description">
-                        When you use Adobe Animate to build the mobile app and you realize that the overall performance is low, what do you do ?
-                        Build a Hackintosh, install xCode and rebuild the app from scratch in Objective&nbsp;C.
-                    </p>
-                    <!-- <a href="hotel-bloom.html" id="" class="btns btn-black  trans">More about the app</a> -->
-                </div>
-            </div>
-
-
-
 
         </main>
+
+        <!-- <div class="showcase-suggestionWrap" data-label="Interested in another project?">
+            <a href="./" id="createjs-showcaseSuggestion" class="btns showcase-suggestion trans" data-label="CreateJS">CreateJS</a>
+            <a href="./" id="CAMP-showcaseSuggestion" class="btns showcase-suggestion trans" data-label="CAMP Festival">CAMP Festival</a>
+        </div> -->
 
         <div id="footer">
             <div id="footer_cta" class="footer_col">
@@ -180,16 +130,15 @@
                 <a href="https://leetcode.com/tibi_g/" class="footer_link" target="_blank"><span class="ico-leetcode"></span> leetcode.com/tibi_g</a>
             </div>
             <div id="footer_copyright">
-                <p id="footer_copyright_text"><span class="footer_copyright_symbol">©</span>2022 tibi|gp|</p>
+                <p id="footer_copyright_text"><span class="footer_copyright_symbol">©</span>2022 tibi_gp</p>
             </div>
         </div>
-        
     </div>
 
 </body>
 
 <script src="//vjs.zencdn.net/7.10.2/video.min.js"></script>
 <script src="js/lib.min.js"></script>
-<script src="js/main.min.js?v4"></script>
+<script src="js/main.min.js"></script>
 
 </html>
