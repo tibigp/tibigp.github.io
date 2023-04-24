@@ -1,1 +1,1 @@
-<strong>hello!</strong>
+<div style="background-color:red; color:white"><strong>hello!</strong></div>
